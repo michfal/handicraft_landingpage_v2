@@ -2,20 +2,36 @@ import React from 'react';
 import Image from 'next/image';
 
 import bgImage from '../../../public/images/main_bg_illustration.svg';
+import logo from '../../../public/images/logo.svg';
 
-import { HeroWrapper } from './hero.styles';
+import { HeroWrapper, LogoWrapper, BgImageWrapper, HeroHeader, HeroList } from './hero.styles';
 
 export const Hero = () => {
     return (
         <HeroWrapper>
-            <h1>Hero</h1>
-            <Image
-                alt="Mountains"
-                src={bgImage}
-                layout="fill"
-                objectFit="cover"
-                quality={100}
-            />
+            <LogoWrapper>
+                <Image
+                    alt="logo"
+                    src={logo}
+                    quality={100}
+                    layout="fill"
+                />
+            </LogoWrapper>
+            <HeroHeader>Rękodzieło Artystyczne</HeroHeader>
+            <HeroList>
+                <li>Lalki</li>
+                <li>Kwiaty</li>
+                <li>Ozdoby</li>
+            </HeroList>
+            <BgImageWrapper>
+                <Image
+                    alt="background"
+                    src={bgImage}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={100}
+                />
+            </BgImageWrapper>
         </HeroWrapper>
     );
 }

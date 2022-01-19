@@ -1,11 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import { Navbar } from '../components/navbar/Navbar.component';
 import { Hero } from '../components/sections/hero/Hero.component'
-// import { Offer } from "../components/offer/Offer.component";
-// import { About } from "../components/sections/about/About.component";
-// import { Contact } from "../components/contact/Contact.component";
 
 
 export default function Home() {

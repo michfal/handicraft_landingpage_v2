@@ -4,7 +4,7 @@ export const theme = {
       darkGrayBlue: "#31506E",
       // darkGrayBlue: "green",
       lightGrayBlue: "#4A78A6",
-      purple: "#A06FD7",
+      violet: "#A06FD7",
       lightGray: "#E7EEF4"
     },
     breakpoints: {

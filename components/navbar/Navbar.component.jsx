@@ -9,11 +9,9 @@ import { ThemeContext } from 'styled-components';
 export const Navbar = () => {
     const themeContext = useContext(ThemeContext)
 
-    console.log('Current theme: ', themeContext.braekpoinst)
-    // props.theme.brakpoints.mobileM
+    // console.log('Current theme: ', themeContext)
+
     return (
-        // <HeaderTest>Navbar</HeaderTest>
-        // Change "href=/" to react scroll
         <NavbarWrapper>
             <NavList >
                 <Link href="/"><NavElement >Strona Główna</NavElement></Link>

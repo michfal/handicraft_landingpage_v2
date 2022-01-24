@@ -1,9 +1,7 @@
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "../globals/reset.styles"
+import { GlobalStyle } from "../globals/reset.styles";
 
-import { theme, size } from "../globals/theme"
-
-
+import { theme, size } from "../globals/theme";
 
 
 function MyApp({ Component, pageProps }) {

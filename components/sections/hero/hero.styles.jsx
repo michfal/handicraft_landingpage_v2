@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-
 export const HeroWrapper = styled.div`
-    height: 100vh;
+    /* min-height: 60vh; */
     width: 100vw;
     padding-top: 3rem;
 `;

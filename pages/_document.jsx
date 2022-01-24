@@ -1,4 +1,4 @@
-import Document from 'next/document'
+import Document from "next/document"
 import { ServerStyleSheet } from 'styled-components'
 import Head from "next/head";
 

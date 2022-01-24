@@ -1,11 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import { Navbar } from '../components/navbar/Navbar.component';
-import { Hero } from '../components/sections/hero/Hero.component'
-// import { Offer } from "../components/offer/Offer.component";
-// import { About } from "../components/sections/about/About.component";
-// import { Contact } from "../components/contact/Contact.component";
+import { Hero } from '../components/sections/hero/Hero.component';
+import { Offer } from '../components/sections/offer/Offer.component';
 
 
 export default function Home() {
@@ -20,8 +17,8 @@ export default function Home() {
       <main>
           <Navbar />
           <Hero />
-          {/* <Offer />
-          <About />
+          <Offer />
+          {/* <About />
           <Contact /> */}
       </main>
     </>

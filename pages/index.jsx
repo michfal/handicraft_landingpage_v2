@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import { Navbar } from '../components/navbar/Navbar.component';
 import { Hero } from '../components/sections/hero/Hero.component';
-import { Offer } from '../components/sections/offer/Offer.component';
+import { Offer } from '../components/sections/offer/offer.component';
 
 
 export default function Home() {

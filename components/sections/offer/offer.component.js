@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { HeaderLight } from '../../headerLight/headerLight.component';
+import { HeaderLight } from '../../headerLight/headerLight.component';
 import { PointViolet } from '../../pointViolet/pointViolet.component';
 import { PointTick } from '../../pointTick/pointTick.components';
 

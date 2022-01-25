@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HeaderLignt } from '../../headerLight/headerLight.component';
+import { HeaderLight } from '../../headerLight/headerLight.component';
 import { PointViolet } from '../../pointViolet/pointViolet.component';
 import { PointTick } from '../../pointTick/pointTick.components';
 
@@ -12,7 +12,7 @@ export const Offer = () => {
 
     return (
         <OfferWrapper>
-            <HeaderLignt>Oferuję:</HeaderLignt>
+            <HeaderLight>Oferuję:</HeaderLight>
 
             <VioletPointsWrapper>
 

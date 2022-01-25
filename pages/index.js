@@ -17,7 +17,7 @@ export default function Home() {
       <main>
           <Navbar />
           <Hero />
-          <Offer />
+          {/* <Offer /> */}
           {/* <About />
           <Contact /> */}
       </main>

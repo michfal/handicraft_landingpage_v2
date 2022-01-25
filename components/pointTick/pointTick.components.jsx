@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import pointer from '../../public/images/pointer.svg';
+import { Paragraph } from '../paragraph/paragraph.component';
 
-import { PointTickWrapper, ImageWrapper, PointText } from './pointTick.styles';
+import { PointTickWrapper, ImageWrapper } from './pointTick.styles';
 
 export const PointTick = ({text}) => {
 
@@ -16,7 +17,7 @@ export const PointTick = ({text}) => {
                     quality={100}
                 />
             </ImageWrapper>
-            <PointText>{text}</PointText>
+            <Paragraph text={text}/>
         </PointTickWrapper>
     )
 }

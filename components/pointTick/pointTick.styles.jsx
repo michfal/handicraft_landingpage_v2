@@ -12,20 +12,11 @@ export const PointTickWrapper = styled.div`
 export const ImageWrapper = styled.div`
     height: 5rem;
     min-width: 5rem;
+    /* padding-right: 1rem; */
+    margin: 0.5rem 1rem auto auto;
     /* border: 1px solid red; */
     position: relative;
     display: inline-block;
-    & > span {
-        height: 100%;
-        /* width: 8rem; */
-    }
+    
 `;
 
-export const PointText = styled.p`
-        color: ${props => props.theme.colors.lightGrayBlue};
-        font-size: 16px;
-        display: inline-block;
-        /* width: 25rem; */
-        margin-top: 0;
-        padding-left: 1rem;
-`;

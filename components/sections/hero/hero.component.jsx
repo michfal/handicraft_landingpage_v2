@@ -19,20 +19,21 @@ export const Hero = () => {
                 />
             </LogoWrapper>
             <HeaderBold main>Rękodzieło Artystyczne</HeaderBold>
+            
             <HeroList>
                 <li>Lalki</li>
                 <li>Kwiaty</li>
                 <li>Ozdoby</li>
             </HeroList>
-            <BgImageWrapper>
-                <Image
-                    alt="background"
-                    src={bgImage}
-                    layout="fill"
-                    objectFit="cover"
-                    quality={100}
-                />
-            </BgImageWrapper>
+
+            <Image
+                alt="background"
+                src={bgImage}
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+            />
+
         </HeroWrapper>
     );
 }

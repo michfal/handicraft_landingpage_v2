@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const HeroWrapper = styled.div`
-    /* min-height: 60vh; */
+    position: relative;
     width: 100vw;
     padding-top: 3rem;
+    & > span {
+        z-index: -1;
+    }
 `;
 
 export const LogoWrapper = styled.div`
-    /* border: 1px solid red; */
     width: 80%;
     min-height: 30rem;
     position: relative;
@@ -17,11 +19,6 @@ export const LogoWrapper = styled.div`
     }
 `;
 
-export const BgImageWrapper = styled.div`
-    & > span {
-        z-index: -1;
-    }
-`;
 
 export const HeroHeader = styled.div`
     font-weight: 700;

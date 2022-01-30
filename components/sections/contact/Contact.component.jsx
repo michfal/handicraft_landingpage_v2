@@ -1,9 +1,12 @@
 import React from 'react';
+import { HeaderBold } from '../../headerBold/headerBold.component';
+
+import { ContactWrapper } from './contact.styles'
 
 export const Contact = () => {
     return (
-        <div>
-            <h1>Contact</h1>
-        </div>
+        <ContactWrapper>
+            <HeaderBold>Kontakt</HeaderBold>
+        </ContactWrapper>
     );
 }

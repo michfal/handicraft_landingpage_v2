@@ -22,8 +22,8 @@ export const Offer = () => {
 
             </VioletPointsWrapper>
 
-            <PointTick text={Texts.offer.first}></PointTick>
-            <PointTick text={Texts.offer.second}></PointTick>
+            <PointTick text={Texts.offer.first} />
+            <PointTick text={Texts.offer.second} />
 
         </OfferWrapper>
     );

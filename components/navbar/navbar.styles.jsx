@@ -11,7 +11,7 @@ export const NavbarWrapper = styled.div`
     z-index: 1;
     background-image: linear-gradient(180deg, white, white, rgba(255,255,255, 0));
     /* background-color: lightblue; */
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 `;
 
 export const NavList = styled.div`

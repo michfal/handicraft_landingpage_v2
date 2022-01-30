@@ -7,7 +7,7 @@ import { ThemeContext } from 'styled-components';
 
 
 export const Navbar = () => {
-    const themeContext = useContext(ThemeContext)
+    // const themeContext = useContext(ThemeContext)
 
     // console.log('Current theme: ', themeContext)
 

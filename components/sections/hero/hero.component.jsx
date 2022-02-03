@@ -5,21 +5,22 @@ import bgImage from '../../../public/images/main_bg_illustration.svg';
 import logo from '../../../public/images/logo.svg';
 import { HeaderBold } from '../../headerBold/headerBold.component';
 
-import { HeroWrapper, LogoWrapper, BgImageWrapper, HeroHeader, HeroList } from './hero.styles';
+import {
+    HeroWrapper,
+    LogoWrapper,
+    BgImageWrapper,
+    HeroHeader,
+    HeroList,
+} from './hero.styles';
 
 export const Hero = () => {
     return (
-        <HeroWrapper>
+        <HeroWrapper id="main">
             <LogoWrapper>
-                <Image
-                    alt="logo"
-                    src={logo}
-                    quality={100}
-                    layout="fill"
-                />
+                <Image alt="logo" src={logo} quality={100} layout="fill" />
             </LogoWrapper>
             <HeaderBold main>Rękodzieło Artystyczne</HeaderBold>
-            
+
             <HeroList>
                 <li>Lalki</li>
                 <li>Kwiaty</li>
@@ -33,7 +34,6 @@ export const Hero = () => {
                 objectFit="cover"
                 quality={100}
             />
-
         </HeroWrapper>
     );
-}
+};

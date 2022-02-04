@@ -14,10 +14,10 @@ export const Navbar = () => {
         <NavbarWrapper>
             <NavList>
                 <Link href="/" passHref>
-                    <NavElement>Strona Główna</NavElement>
+                    Strona Główna
                 </Link>
                 <Link href="/gallery" passHref>
-                    <NavElement>Galeria</NavElement>
+                    Galeria
                 </Link>
                 <LinkScroll
                     activeClass="active"
@@ -26,7 +26,7 @@ export const Navbar = () => {
                     smooth={true}
                     duration={1000}
                 >
-                    <NavElement>Kontakt</NavElement>
+                    Kontakt
                 </LinkScroll>
             </NavList>
         </NavbarWrapper>

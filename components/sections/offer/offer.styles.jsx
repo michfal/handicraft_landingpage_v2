@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const OfferWrapper = styled.div`
     /* min-height: 70vh; */
     padding-top: 20vh;
+    /* width: 100vw; */
     /* border: 1px solid red; */
-`
+`;
 
 export const VioletPointsWrapper = styled.div`
     display: flex;
@@ -14,4 +15,4 @@ export const VioletPointsWrapper = styled.div`
     margin-top: 10%;
     /* border: 1px solid green; */
     /* background-color: gray; */
-`
+`;

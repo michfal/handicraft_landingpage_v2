@@ -3,11 +3,13 @@ import styled from 'styled-components';
 export const ContactWrapper = styled.div`
     min-height: 50vh;
     position: relative;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     & > span {
         z-index: -1;
+        top: -5rem;
     }
 `;
 
@@ -32,8 +34,8 @@ export const ContactInfo = styled.div`
         margin: auto 2rem auto auto;
     }
     & > span {
-        position: absolute !important;
+        /* position: absolute !important; */
         top: -2rem;
-        left: 0.9rem;
+        left: 0.5rem;
     }
 `;

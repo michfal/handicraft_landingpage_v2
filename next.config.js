@@ -1,10 +1,11 @@
 module.exports = {
-  reactStrictMode: true,
-  images: {
-    domains: ["res.cloudinary.com"],
-  },
-  i18n: {
-    locales: ["pl"],
-    defaultLocale: "pl",
-  },
+    reactStrictMode: true,
+    images: {
+        domains: ['res.cloudinary.com'],
+        // deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    },
+    i18n: {
+        locales: ['pl'],
+        defaultLocale: 'pl',
+    },
 };

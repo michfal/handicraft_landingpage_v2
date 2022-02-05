@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const ContactWrapper = styled.div`
-    min-height: 50vh;
+    min-height: 40vh;
     position: relative;
-    /* width: 100vw; */
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;

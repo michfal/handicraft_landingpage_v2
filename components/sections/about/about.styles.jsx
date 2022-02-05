@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-
 export const AboutWrapper = styled.div`
-    min-height: 50vh;
+    /* min-height: 50vh; */
+    padding-top: 5vh;
 `;
 
 export const ParagraphWrapper = styled.div`
@@ -12,5 +12,4 @@ export const ParagraphWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-`
-
+`;

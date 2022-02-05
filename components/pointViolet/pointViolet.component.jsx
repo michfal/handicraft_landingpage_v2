@@ -1,9 +1,12 @@
 import React from 'react';
 
-import { Point } from './pointViolet.styles'
+import { Point, PointText, PointWrapper } from './pointViolet.styles';
 
-export const PointViolet = ({children}) => {
+export const PointViolet = ({ children }) => {
     return (
-        <Point>{children}</Point>
-    )
-}
+        <PointWrapper>
+            <Point></Point>
+            <PointText>{children}</PointText>
+        </PointWrapper>
+    );
+};

@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 export const OfferWrapper = styled.div`
-    /* min-height: 70vh; */
-    padding-top: 20vh;
-    /* width: 100vw; */
-    /* border: 1px solid red; */
+    padding-top: 10vh;
 `;
 
 export const VioletPointsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* align-items: center; */
     height: 20rem;
-    margin-top: 10%;
+    /* margin-top: 5%; */
     /* border: 1px solid green; */
-    /* background-color: gray; */
+    width: 70%;
+    margin: 5% auto auto auto;
 `;

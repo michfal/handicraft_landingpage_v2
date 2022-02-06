@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as LinkScroll } from 'react-scroll';
+import Link from 'next/link';
 
 import { FooterWrapper, FooterText } from './footer.styles';
 
@@ -9,15 +10,9 @@ let year = d.getFullYear();
 export const Footer = () => {
     return (
         <FooterWrapper>
-            <LinkScroll
-                activeClass="active"
-                to="main"
-                spy={true}
-                smooth={true}
-                duration={1000}
-            >
+            <Link href="/" passHref>
                 <FooterText>Strona Główna</FooterText>
-            </LinkScroll>
+            </Link>
 
             <FooterText>Copyright {year} Michał Fal</FooterText>
         </FooterWrapper>

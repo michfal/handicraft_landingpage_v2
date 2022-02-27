@@ -15,6 +15,7 @@ import {
 } from './hero.styles';
 
 export const Hero = () => {
+    // console.log(logo);
     return (
         <HeroWrapper id="main">
             <LogoWrapper>

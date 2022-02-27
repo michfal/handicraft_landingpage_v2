@@ -1,21 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
 import { Navbar } from '../components/navbar/navbar.component';
 import { Footer } from '../components/footer/footer.component';
-import { HeaderBold } from '../components/headerBold/headerBold.component';
-import {
-    GalleryWrapper,
-    GalleryImages,
-    GalleryDivider,
-} from '../components/galleryStyles/gallery.styles';
-
-import styles from '../styles/Home.module.css';
-import styled from 'styled-components';
+import { GalleryContent } from '../components/galleryContent/galleryContent.component';
 
 export default function Home({ images }) {
     return (
-        <div className={styles.container}>
+        <>
             <Head>
                 <title>Szmatki Kwiatki i Bukiety</title>
                 <meta
@@ -26,27 +17,9 @@ export default function Home({ images }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
-
-            <GalleryWrapper>
-                <HeaderBold>Galeria</HeaderBold>
-                <GalleryDivider />
-                <GalleryImages>
-                    {images.map((image) => {
-                        return (
-                            <div key={image.id}>
-                                <Image
-                                    width={image.width}
-                                    height={image.height}
-                                    src={image.image}
-                                    alt=""
-                                />
-                            </div>
-                        );
-                    })}
-                </GalleryImages>
-            </GalleryWrapper>
+            <GalleryContent images={images} />
             <Footer />
-        </div>
+        </>
     );
 }
 

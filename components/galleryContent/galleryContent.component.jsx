@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { GalleryContext } from '../../context/galleryContext';
 import { HeaderBold } from '../headerBold/headerBold.component';
 import { DisplayedGalleryImage } from '../displayedGalleryImage/displayedGalleryImage.component';
+import { useScrollLock } from '../../hooks/useScrollLock';
 import {
     GalleryWrapper,
     GalleryImages,
@@ -24,6 +25,11 @@ export const GalleryContent = ({ images }) => {
         setImageOpen();
     };
 
+    const { lockScroll, unlockScroll } = useScrollLock();
+
+    useEffect(() => {
+        openGalleryState ? lockScroll() : unlockScroll();
+    });
     return (
         <GalleryWrapper>
             <HeaderBold>Galeria</HeaderBold>

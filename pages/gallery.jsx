@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import { useEffect } from 'react';
 import { Navbar } from '../components/navbar/navbar.component';
 import { Footer } from '../components/footer/footer.component';
 import { GalleryContent } from '../components/galleryContent/galleryContent.component';

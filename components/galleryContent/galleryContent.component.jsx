@@ -36,7 +36,6 @@ export const GalleryContent = ({ images }) => {
             <GalleryDivider />
             {openGalleryState && (
                 <DisplayedGalleryImage
-                    // setImageOpen={setImageOpen}
                     imagesData={images}
                     index={activeImageIndex}
                 />

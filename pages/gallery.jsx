@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
 import { Navbar } from '../components/navbar/navbar.component';
 import { Footer } from '../components/footer/footer.component';
 import { GalleryContent } from '../components/galleryContent/galleryContent.component';
@@ -45,7 +44,7 @@ export async function getStaticProps() {
     ).then((r) => r.json());
 
     const { resources } = results;
-    // console.log(resources);
+
     const images = resources.map((resource) => {
         const { width, height } = resource;
         return {

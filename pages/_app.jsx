@@ -1,4 +1,6 @@
 import { ThemeProvider } from "styled-components";
+
+import './_app.css';
 import { GlobalStyle } from "../globals/reset.styles";
 
 import { theme, size } from "../globals/theme";

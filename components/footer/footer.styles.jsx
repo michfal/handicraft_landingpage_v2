@@ -9,6 +9,6 @@ export const FooterWrapper = styled.div`
 `;
 
 export const FooterText = styled.h1`
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: ${(props) => props.theme.colors.light};
 `;

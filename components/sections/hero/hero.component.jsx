@@ -14,7 +14,7 @@ import {
     HeroList,
 } from './hero.styles';
 
-export const Hero = () => {
+export const Hero = ({ windowSize }) => {
     // console.log(logo);
     return (
         <HeroWrapper id="main">

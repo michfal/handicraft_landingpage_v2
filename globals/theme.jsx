@@ -1,3 +1,9 @@
+export const size = {
+    mobile: 375,
+    tablet: 768,
+    laptop: 1024,
+};
+
 export const theme = {
     colors: {
         darkGrayBlue: '#31506E',
@@ -8,21 +14,11 @@ export const theme = {
     },
     breakpoints: {
         // mobileS: '320px',
-        mobile: '375px',
+        mobile: `${size.mobile}px`,
         // mobileL: '425px',
-        tablet: '768px',
-        laptop: '1024px',
+        tablet: `${size.tablet}px`,
+        laptop: `${size.laptop}px`,
         // laptopL: '1440px',
         // desktop: '2560px'
     },
-};
-
-export const size = {
-    mobileS: '320px',
-    mobileM: '375px',
-    mobileL: '425px',
-    tablet: '768px',
-    laptop: '1024px',
-    laptopL: '1440px',
-    desktop: '2560px',
 };

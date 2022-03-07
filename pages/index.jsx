@@ -6,8 +6,11 @@ import { Offer } from '../components/sections/offer/offer.component';
 import { About } from '../components/sections/about/about.component';
 import { Contact } from '../components/sections/contact/contact.component';
 import { Footer } from '../components/footer/footer.component';
+import { useWindowSize } from '../hooks/useWindowSize';
 
 export default function Home() {
+    const windowSize = useWindowSize();
+
     return (
         <>
             <Head>
@@ -22,7 +25,7 @@ export default function Home() {
 
             <main>
                 <Navbar />
-                <Hero />
+                <Hero windowSize={windowSize} />
                 <Offer />
                 <About />
                 <Contact />

@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-// export const HeaderTest = styled.h1`
-//     color: palevioletred;
-// `;
-
 export const NavbarWrapper = styled.div`
     height: 9rem;
     width: 100vw;
@@ -19,8 +15,10 @@ export const NavbarWrapper = styled.div`
 `;
 
 export const NavList = styled.div`
+    /* border: 1px solid red; */
     color: ${(props) => props.theme.colors.darkGrayBlue};
     width: 80%;
+    max-width: 50rem;
     margin: auto;
     padding-top: 2rem;
     display: flex;

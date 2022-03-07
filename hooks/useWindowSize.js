@@ -1,28 +1,29 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react';
+import { size } from '../globals/theme';
 
-export const nameWindowSize = width => {
-  if (width >= 1024) return "large"
-  if (width >= 750) return "medium"
-  if (width < 750) return "small"
-}
+export const nameWindowSize = (width) => {
+    if (width >= size.laptop) return 'laptop';
+    if (width >= size.tablet) return 'tablet';
+    if (width < size.tablet) return 'mobile';
+};
 
 export const useWindowSize = () => {
-  // const [width, setWidth] = useState([window.innerWidth])
-  const [width, setWidth] = useState()
+    // const [width, setWidth] = useState([window.innerWidth])
+    const [width, setWidth] = useState();
 
-  useEffect(() => {
-    setWidth(window.innerWidth)
+    useEffect(() => {
+        setWidth(window.innerWidth);
 
-    const handleResize = () => {
-      setWidth(window.innerWidth)
-    }
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
 
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
-  const widthName = nameWindowSize(width)
-  return widthName
-}
+    const widthName = nameWindowSize(width);
+    return widthName;
+};

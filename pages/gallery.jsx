@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Navbar } from '../components/navbar/navbar.component';
 import { Footer } from '../components/footer/footer.component';
 import { GalleryContent } from '../components/galleryContent/galleryContent.component';
+import { Contact } from '../components/sections/contact/contact.component';
 
 export default function Home({ images }) {
     return (
@@ -15,8 +16,9 @@ export default function Home({ images }) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            <Navbar gallery />
             <GalleryContent images={images} />
+            <Contact />
             <Footer />
         </>
     );
@@ -47,7 +49,7 @@ export async function getStaticProps() {
 
     const images = resources.map((resource) => {
         const { width, height } = resource;
-        console.log(resource);
+
         return {
             id: resource.asset_id,
             title: resource.public_id,

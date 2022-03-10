@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const OfferWrapper = styled.div`
     padding-top: 10vh;
+    /* border: 1px solid blue; */
+    /* min-height: 40vh; */
 `;
 
 export const VioletPointsWrapper = styled.div`

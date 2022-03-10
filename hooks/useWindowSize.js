@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { size } from '../globals/theme';
+import { sizes } from '../globals/theme';
 
-export const nameWindowSize = (width) => {
-    if (width >= size.laptop) return 'laptop';
-    if (width >= size.tablet) return 'tablet';
-    if (width < size.tablet) return 'mobile';
-};
+// export const nameWindowSize = (width) => {
+//     if (width >= sizes.laptop) return 'laptop';
+//     if (width >= sizes.tablet) return 'tablet';
+//     if (width < sizes.tablet) return 'mobile';
+// };
 
 export const useWindowSize = () => {
     // const [width, setWidth] = useState([window.innerWidth])
@@ -24,6 +24,6 @@ export const useWindowSize = () => {
         };
     }, []);
 
-    const widthName = nameWindowSize(width);
-    return widthName;
+    // const widthName = nameWindowSize(width);
+    return width;
 };

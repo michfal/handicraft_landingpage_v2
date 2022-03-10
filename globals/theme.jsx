@@ -1,4 +1,4 @@
-export const size = {
+export const sizes = {
     mobile: 375,
     tablet: 768,
     laptop: 1024,
@@ -14,10 +14,10 @@ export const theme = {
     },
     breakpoints: {
         // mobileS: '320px',
-        mobile: `${size.mobile}px`,
+        mobile: `${sizes.mobile}px`,
         // mobileL: '425px',
-        tablet: `${size.tablet}px`,
-        laptop: `${size.laptop}px`,
+        tablet: `${sizes.tablet}px`,
+        laptop: `${sizes.laptop}px`,
         // laptopL: '1440px',
         // desktop: '2560px'
     },

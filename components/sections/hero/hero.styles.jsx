@@ -5,37 +5,54 @@ export const HeroWrapper = styled.div`
     /* width: 100vw; */
     padding-top: 3rem;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
     & > span {
         z-index: -1;
     }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.tablet}) {
+        padding-top: 8rem;
+        grid-template-columns: 1fr 1fr;
+    }
+`;
+
+export const TextWrapper = styled.div`
+    grid-column-start: 1;
+    grid-column-end: 3;
 `;
 
 export const LogoWrapper = styled.div`
-    width: 80%;
-    min-height: 30rem;
+    width: 70%;
+    min-height: 25rem;
     position: relative;
     margin: auto;
+    /* border: 1px solid green; */
     & > span {
         margin: auto;
     }
-`;
-
-export const HeroHeader = styled.div`
-    font-weight: 700;
-    font-size: 3rem;
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.tablet}) {
-        font-size: 5rem;
+        /* border: 1px solid red; */
+        margin: 0 1rem auto auto;
+        min-height: 20rem;
+        & > span {
+            margin: 0 auto;
+        }
     }
-    @media only screen and (min-width: ${(props) =>
-            props.theme.breakpoints.laptop}) {
-        font-size: 6.5rem;
-    }
-    color: ${(props) => props.theme.colors.darkGrayBlue};
-    text-align: center;
 `;
 
-export const HeroList = styled.ul`
+export const IllustrationWrapper = styled.div`
+    /* width: 70%; */
+    min-height: 30rem;
+    height: 100%;
+    position: relative;
+    /* margin: auto; */
+    /* border: 1px solid red; */
+    /* right: -7rem; */
+`;
+
+export const List = styled.ul`
     font-size: 2rem;
     list-style-type: disc;
     list-style-position: inside;

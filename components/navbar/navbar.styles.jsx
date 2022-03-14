@@ -12,10 +12,13 @@ export const NavbarWrapper = styled.div`
         rgba(255, 255, 255, 0)
     );
     font-size: 1.6rem;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.tablet}) {
+        font-size: 1.8rem;
+    }
 `;
 
 export const NavList = styled.div`
-    /* border: 1px solid red; */
     color: ${(props) => props.theme.colors.darkGrayBlue};
     width: 80%;
     max-width: 50rem;

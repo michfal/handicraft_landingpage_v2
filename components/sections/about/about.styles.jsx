@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const AboutWrapper = styled.div`
     padding-top: 5vh;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.tablet}) {
+        padding: 5vh 0 5vh 0;
+    }
 `;
 
 export const ParagraphWrapper = styled.div`

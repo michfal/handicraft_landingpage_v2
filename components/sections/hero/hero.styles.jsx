@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const HeroWrapper = styled.div`
     position: relative;
-    /* width: 100vw; */
     padding-top: 3rem;
     overflow: hidden;
     display: grid;
@@ -27,13 +26,11 @@ export const LogoWrapper = styled.div`
     min-height: 25rem;
     position: relative;
     margin: auto;
-    /* border: 1px solid green; */
     & > span {
         margin: auto;
     }
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.tablet}) {
-        /* border: 1px solid red; */
         margin: 0 1rem auto auto;
         min-height: 20rem;
         & > span {
@@ -43,13 +40,9 @@ export const LogoWrapper = styled.div`
 `;
 
 export const IllustrationWrapper = styled.div`
-    /* width: 70%; */
     min-height: 30rem;
     height: 100%;
     position: relative;
-    /* margin: auto; */
-    /* border: 1px solid red; */
-    /* right: -7rem; */
 `;
 
 export const List = styled.ul`

@@ -1,25 +1,24 @@
 import React from 'react';
 import Image from 'next/image';
 
-import bgImage from '../../../public/images/main_bg_illustration.svg';
-import logo from '../../../public/images/logo.svg';
-import heroIllustration from '../../../public/images/top_illustration.svg';
 import { HeaderBold } from '../../headerBold/headerBold.component';
 import { GalleryButton } from '../../galleryButton/galleryButton.component';
 import { sizes } from '../../../globals/theme';
 
+import bgImage from '../../../public/images/main_bg_illustration.svg';
+import logo from '../../../public/images/logo.svg';
+import heroIllustration from '../../../public/images/top_illustration.svg';
+
 import {
     HeroWrapper,
     LogoWrapper,
-    HeroHeader,
     List,
     IllustrationWrapper,
-    ImagesWrapper,
     TextWrapper,
 } from './hero.styles';
 
 export const Hero = ({ windowSize }) => {
-    console.log(windowSize);
+    // console.log(windowSize);
     return (
         <HeroWrapper id="main">
             <LogoWrapper>

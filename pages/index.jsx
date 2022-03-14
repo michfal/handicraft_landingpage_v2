@@ -28,7 +28,7 @@ export default function Home() {
                 <Hero windowSize={windowSize} />
                 <Offer />
                 <About />
-                <Contact />
+                <Contact windowSize={windowSize} />
                 <Footer />
             </main>
         </>

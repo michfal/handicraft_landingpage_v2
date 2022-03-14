@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HeaderBold } from '../../headerBold/headerBold.component';
+import { sizes } from '../../../globals/theme';
+
 import illustration from '../../../public/images/contact_illustration.svg';
 import bgImage from '../../../public/images/contact_bg_image.svg';
 import bubblesContact from '../../../public/images/bubbles_contact.svg';
@@ -12,13 +14,14 @@ import {
     ContactWrapper,
     ContactInfoWrapper,
     ContactInfo,
+    IllustrationWrapper,
 } from './contact.styles';
 
 const bubbleStyles = {
     top: '-5rem !important',
 };
 
-export const Contact = () => {
+export const Contact = ({ windowSize }) => {
     return (
         <ContactWrapper id="contact">
             <HeaderBold>Kontakt</HeaderBold>
@@ -47,13 +50,16 @@ export const Contact = () => {
                 </ContactInfo>
             </ContactInfoWrapper>
 
-            {/* <Image
-                alt="background"
-                src={illustration}
-                layout="fill"
-                objectFit="cover"
-                quality={100}
-            /> */}
+            {windowSize >= sizes.tablet && (
+                <IllustrationWrapper>
+                    <Image
+                        alt="logo"
+                        src={illustration}
+                        quality={100}
+                        layout="fill"
+                    />
+                </IllustrationWrapper>
+            )}
             <Image
                 alt="background"
                 src={bgImage}
@@ -61,15 +67,6 @@ export const Contact = () => {
                 objectFit="cover"
                 quality={100}
             />
-            {/* <Image
-                className="contact_bubbles"
-                alt="bg_bubbles"
-                src={bubblesContact}
-                layout="fill"
-                // objectFit="cover"
-                quality={100}
-                style={bubbleStyles}
-            /> */}
         </ContactWrapper>
     );
 };

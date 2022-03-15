@@ -8,6 +8,7 @@ import { sizes } from '../../../globals/theme';
 import bgImage from '../../../public/images/main_bg_illustration.svg';
 import logo from '../../../public/images/logo.svg';
 import heroIllustration from '../../../public/images/top_illustration.svg';
+import bubblesMain from '../../../public/images/bubbles_main.svg';
 
 import {
     HeroWrapper,
@@ -15,6 +16,7 @@ import {
     List,
     IllustrationWrapper,
     TextWrapper,
+    BubblesWrapper,
 } from './hero.styles';
 
 export const Hero = ({ windowSize }) => {
@@ -51,6 +53,16 @@ export const Hero = ({ windowSize }) => {
                 objectFit="cover"
                 quality={100}
             />
+            {windowSize >= sizes.tablet && (
+                <BubblesWrapper>
+                    <Image
+                        alt="logo"
+                        src={bubblesMain}
+                        quality={100}
+                        layout="fill"
+                    />
+                </BubblesWrapper>
+            )}
         </HeroWrapper>
     );
 };

@@ -26,7 +26,7 @@ export default function Home() {
             <main>
                 <Navbar />
                 <Hero windowSize={windowSize} />
-                <Offer />
+                <Offer windowSize={windowSize} />
                 <About />
                 <Contact windowSize={windowSize} />
                 <Footer />

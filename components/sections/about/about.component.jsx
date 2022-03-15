@@ -12,7 +12,6 @@ export const About = () => {
                 <Paragraph text={Texts.about.first} />
                 <Paragraph text={Texts.about.second} />
             </ParagraphWrapper>
-            
         </AboutWrapper>
     );
-}
+};

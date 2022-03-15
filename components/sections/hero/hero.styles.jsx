@@ -13,6 +13,7 @@ export const HeroWrapper = styled.div`
             props.theme.breakpoints.tablet}) {
         padding-top: 8rem;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.2fr 0.5fr;
     }
 `;
 
@@ -55,4 +56,15 @@ export const List = styled.ul`
     & > li {
         line-height: 3rem;
     }
+`;
+
+export const BubblesWrapper = styled.div`
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 100%;
+    width: 90%;
+    margin: auto;
 `;

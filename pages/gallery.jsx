@@ -3,8 +3,10 @@ import { Navbar } from '../components/navbar/navbar.component';
 import { Footer } from '../components/footer/footer.component';
 import { GalleryContent } from '../components/galleryContent/galleryContent.component';
 import { Contact } from '../components/sections/contact/contact.component';
+import { useWindowSize } from '../hooks/useWindowSize';
 
 export default function Home({ images }) {
+    const windowSize = useWindowSize();
     return (
         <>
             <Head>
@@ -18,7 +20,7 @@ export default function Home({ images }) {
             </Head>
             <Navbar gallery />
             <GalleryContent images={images} />
-            <Contact />
+            <Contact windowSize={windowSize} />
             <Footer />
         </>
     );

@@ -13,12 +13,7 @@ import rightArrow from '../../public/images/right_arrow_icon.svg';
 
 export const DisplayedGalleryImage = ({ imagesData, index }) => {
     const imagesArrayLength = imagesData.length;
-    const {
-        openGalleryState,
-        setImageOpen,
-        activeImageIndex,
-        setActiveImageIndex,
-    } = useContext(GalleryContext);
+    const { setImageOpen, setActiveImageIndex } = useContext(GalleryContext);
 
     const scrollRight = () => {
         if (index < imagesArrayLength - 1) {

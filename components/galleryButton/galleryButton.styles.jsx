@@ -10,4 +10,8 @@ export const Button = styled.button`
     border-radius: 3rem;
     margin: 5rem auto auto auto;
     display: block;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.tablet}) {
+        margin: 5rem auto auto 20%;
+    }
 `;

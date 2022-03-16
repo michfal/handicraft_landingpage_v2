@@ -6,9 +6,16 @@ export const GalleryWrapper = styled.div`
 
 export const GalleryImages = styled.div`
     padding-top: 1rem;
+    /* width: 100%; */
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    row-gap: 1.5rem;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.tablet}) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+    }
 `;
 
 export const GalleryDivider = styled.div`
@@ -19,10 +26,11 @@ export const GalleryDivider = styled.div`
 `;
 
 export const GalleryImage = styled.div`
-    width: 90vw;
-    height: 90vw;
-    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
     overflow: hidden;
+    margin: auto;
     & > span {
         pointer-events: none;
     }

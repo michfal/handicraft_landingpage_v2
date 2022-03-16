@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HeaderBold } from '../../headerBold/headerBold.component';
-import { sizes } from '../../../globals/theme';
+import { sizes } from '../../../globals/breakpoints';
 
 import illustration from '../../../public/images/contact_illustration.svg';
 import bgImage from '../../../public/images/contact_bg_image.svg';

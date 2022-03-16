@@ -1,8 +1,4 @@
-export const sizes = {
-    mobile: 375,
-    tablet: 768,
-    laptop: 1024,
-};
+import { sizes } from './breakpoints';
 
 export const theme = {
     colors: {

@@ -4,6 +4,7 @@ import { GalleryContext } from '../../context/galleryContext';
 import { HeaderBold } from '../headerBold/headerBold.component';
 import { DisplayedGalleryImage } from '../displayedGalleryImage/displayedGalleryImage.component';
 import { useScrollLock } from '../../hooks/useScrollLock';
+
 import {
     GalleryWrapper,
     GalleryImages,

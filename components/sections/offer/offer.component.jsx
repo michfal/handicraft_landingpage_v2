@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { HeaderLight } from '../../headerLight/headerLight.component';
 import { PointViolet } from '../../pointViolet/pointViolet.component';
 import { PointTick } from '../../pointTick/pointTick.components';
-import { sizes } from '../../../globals/theme';
+import { sizes } from '../../../globals/breakpoints';
 
 import { Texts } from '../../../globals/texts';
 import bubblesOffer from '../../../public/images/bubbles_offer.svg';

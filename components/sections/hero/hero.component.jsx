@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { HeaderBold } from '../../headerBold/headerBold.component';
 import { GalleryButton } from '../../galleryButton/galleryButton.component';
-import { sizes } from '../../../globals/theme';
+import { sizes } from '../../../globals/breakpoints';
 
 import bgImage from '../../../public/images/main_bg_illustration.svg';
 import logo from '../../../public/images/logo.svg';

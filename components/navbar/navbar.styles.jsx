@@ -16,11 +16,15 @@ export const NavbarWrapper = styled.div`
             props.theme.breakpoints.tablet}) {
         font-size: 1.8rem;
     }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    }
 `;
 
 export const NavList = styled.div`
     color: ${(props) => props.theme.colors.darkGrayBlue};
-    /* border: 1px solid red; */
     width: 80%;
     max-width: 40rem;
     margin: auto;
@@ -29,14 +33,11 @@ export const NavList = styled.div`
     justify-content: space-between;
     & > * {
         cursor: pointer;
+        padding: 0 1rem 1rem;
     }
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.laptop}) {
-        margin: auto auto auto 20%;
+        margin: 0 auto;
+        grid-column-start: 2;
     }
-`;
-
-export const NavElement = styled.a`
-    cursor: pointer;
-    padding: 0 1rem 1rem;
 `;

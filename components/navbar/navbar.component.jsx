@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link as LinkScroll } from 'react-scroll';
 import Link from 'next/link';
-import { NavbarWrapper, NavList, NavElement } from './navbar.styles';
+import { NavbarWrapper, NavList } from './navbar.styles';
 
 export const Navbar = () => {
     return (
         <NavbarWrapper>
             <NavList>
                 <Link href="/" passHref>
-                    <NavElement> Strona Główna </NavElement>
+                    Strona Główna
                 </Link>
                 <Link href="/gallery" passHref>
-                    <NavElement>Galeria</NavElement>
+                    Galeria
                 </Link>
 
                 <LinkScroll
@@ -21,7 +21,7 @@ export const Navbar = () => {
                     smooth={true}
                     duration={1000}
                 >
-                    <NavElement>Kontakt</NavElement>
+                    Kontakt
                 </LinkScroll>
             </NavList>
         </NavbarWrapper>

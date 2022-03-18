@@ -18,6 +18,7 @@ export const HeroWrapper = styled.div`
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.laptop}) {
         grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-rows: 1fr 1fr 0.2fr 0.6fr;
     }
 `;
 
@@ -42,9 +43,9 @@ export const LogoWrapper = styled.div`
     }
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.laptop}) {
-        margin: auto auto auto 20%;
+        margin: 0 auto auto 20%;
         grid-column-start: 2;
-        width: 30rem;
+        width: 27rem;
     }
 `;
 
@@ -56,6 +57,7 @@ export const IllustrationWrapper = styled.div`
             props.theme.breakpoints.laptop}) {
         grid-column-start: 3;
         grid-row: 1 / 3;
+        height: 90%;
     }
 `;
 
@@ -78,13 +80,14 @@ export const List = styled.ul`
 export const BubblesWrapper = styled.div`
     position: relative;
     grid-column: 1 / 3;
-    /* grid-column-end: 3; */
     grid-row-start: 4;
     height: 100%;
     width: 90%;
     margin: auto;
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.laptop}) {
-        grid-column-end: 4;
+        grid-column: 2 / 4;
+        width: 80%;
+        margin-left: 0;
     }
 `;

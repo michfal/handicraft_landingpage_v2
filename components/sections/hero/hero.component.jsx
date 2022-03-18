@@ -20,7 +20,6 @@ import {
 } from './hero.styles';
 
 export const Hero = ({ windowSize }) => {
-    // console.log(windowSize);
     return (
         <HeroWrapper id="main">
             <LogoWrapper>

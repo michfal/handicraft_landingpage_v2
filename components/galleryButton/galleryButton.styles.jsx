@@ -14,4 +14,9 @@ export const Button = styled.button`
             props.theme.breakpoints.tablet}) {
         margin: 5rem auto auto 20%;
     }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        margin: 5rem auto auto 0;
+        padding: 1rem 7rem;
+    }
 `;

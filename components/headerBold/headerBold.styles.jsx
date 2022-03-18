@@ -21,10 +21,11 @@ export const HeaderMain = styled(Header)`
     font-size: 3rem;
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.tablet}) {
-        font-size: 5rem;
+        font-size: 4.8rem;
     }
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.laptop}) {
-        font-size: 6.5rem;
+        font-size: 4rem;
+        text-align: left;
     }
 `;

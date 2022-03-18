@@ -15,11 +15,19 @@ export const HeroWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 0.2fr 0.5fr;
     }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    }
 `;
 
 export const TextWrapper = styled.div`
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        grid-column-start: 2;
+        margin-left: 20%;
+    }
 `;
 
 export const LogoWrapper = styled.div`
@@ -27,16 +35,16 @@ export const LogoWrapper = styled.div`
     min-height: 25rem;
     position: relative;
     margin: auto;
-    & > span {
-        margin: auto;
-    }
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.tablet}) {
         margin: 0 1rem auto auto;
         min-height: 20rem;
-        & > span {
-            margin: 0 auto;
-        }
+    }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        margin: auto auto auto 20%;
+        grid-column-start: 2;
+        width: 30rem;
     }
 `;
 
@@ -44,6 +52,11 @@ export const IllustrationWrapper = styled.div`
     min-height: 30rem;
     height: 100%;
     position: relative;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        grid-column-start: 3;
+        grid-row: 1 / 3;
+    }
 `;
 
 export const List = styled.ul`
@@ -56,15 +69,22 @@ export const List = styled.ul`
     & > li {
         line-height: 3rem;
     }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        margin: 5% auto auto 10%;
+    }
 `;
 
 export const BubblesWrapper = styled.div`
     position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
+    /* grid-column-end: 3; */
     grid-row-start: 4;
-    grid-row-end: 5;
     height: 100%;
     width: 90%;
     margin: auto;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        grid-column-end: 4;
+    }
 `;

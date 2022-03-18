@@ -20,8 +20,9 @@ export const NavbarWrapper = styled.div`
 
 export const NavList = styled.div`
     color: ${(props) => props.theme.colors.darkGrayBlue};
+    /* border: 1px solid red; */
     width: 80%;
-    max-width: 50rem;
+    max-width: 40rem;
     margin: auto;
     padding-top: 2rem;
     display: flex;
@@ -29,8 +30,13 @@ export const NavList = styled.div`
     & > * {
         cursor: pointer;
     }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        margin: auto auto auto 20%;
+    }
 `;
 
 export const NavElement = styled.a`
     cursor: pointer;
+    padding: 0 1rem 1rem;
 `;

@@ -12,6 +12,7 @@ import {
     OfferWrapper,
     VioletPointsWrapper,
     BubblesWrapper,
+    PointTickWrapper,
 } from './offer.styles';
 
 export const Offer = ({ windowSize }) => {
@@ -25,8 +26,10 @@ export const Offer = ({ windowSize }) => {
                 <PointViolet>Lalki</PointViolet>
             </VioletPointsWrapper>
 
-            <PointTick text={Texts.offer.first} />
-            <PointTick text={Texts.offer.second} />
+            <PointTickWrapper>
+                <PointTick text={Texts.offer.first} />
+                <PointTick text={Texts.offer.second} />
+            </PointTickWrapper>
             {windowSize >= sizes.tablet && (
                 <BubblesWrapper>
                     <Image

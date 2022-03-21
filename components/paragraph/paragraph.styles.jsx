@@ -10,4 +10,8 @@ export const ParagraphStyle = styled.p`
         font-size: 2.1rem;
         line-height: 3.5rem;
     }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        text-align: left;
+    }
 `;

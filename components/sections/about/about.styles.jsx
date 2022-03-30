@@ -14,7 +14,7 @@ export const AboutWrapper = styled.div`
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.laptop}) {
         grid-template-columns: 0.5fr 1fr 1fr 0.2fr;
-        grid-template-rows: 0.2fr 3fr 1fr 2fr;
+        grid-template-rows: 0.2fr 3fr 2fr;
     }
 `;
 
@@ -40,7 +40,6 @@ export const ParagraphWrapper = styled.div`
 `;
 
 export const IllustrationWrapper = styled.div`
-    /* border: 1px solid red; */
     height: 100%;
     position: relative;
     grid-row: 1 / 3;
@@ -48,18 +47,11 @@ export const IllustrationWrapper = styled.div`
 `;
 
 export const BubblesWrapperOffer = styled.div`
-    /* border: 1px solid green; */
-    width: 90%;
-    margin: 0 0 0 auto;
+    width: 70%;
+    height: 80%;
+    margin: auto auto auto 0;
     position: relative;
     grid-row: 3;
-    grid-column: 3 / 5;
-`;
-
-export const BubblesWrapperAbout = styled.div`
-    /* border: 1px solid red; */
-    width: 90%;
-    position: relative;
-    grid-row: 3 / 5;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
+    transform: scaleX(-1);
 `;

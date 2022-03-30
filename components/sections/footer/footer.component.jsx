@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link as LinkScroll } from 'react-scroll';
 import Link from 'next/link';
 
 import { FooterWrapper, FooterText } from './footer.styles';

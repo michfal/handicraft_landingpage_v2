@@ -6,6 +6,13 @@ export const FooterWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    & > h1:first-child {
+        cursor: pointer;
+    }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        padding: 0 30%;
+    }
 `;
 
 export const FooterText = styled.h1`

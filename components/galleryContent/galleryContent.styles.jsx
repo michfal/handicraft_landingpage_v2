@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const GalleryWrapper = styled.div`
     padding: 8rem 1rem 2rem;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        padding: 8rem 2rem 8rem;
+    }
 `;
 
 export const GalleryImages = styled.div`
@@ -14,6 +18,11 @@ export const GalleryImages = styled.div`
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.tablet}) {
         grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+    }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 1.5rem;
     }
 `;

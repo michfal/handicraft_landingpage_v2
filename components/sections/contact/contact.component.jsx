@@ -6,7 +6,6 @@ import { sizes } from '../../../globals/breakpoints';
 
 import illustration from '../../../public/images/contact_illustration.svg';
 import bgImage from '../../../public/images/contact_bg_image.svg';
-import bubblesContact from '../../../public/images/bubbles_contact.svg';
 import fbIcon from '../../../public/images/fb_icon.svg';
 import mailIcon from '../../../public/images/mail_icon.svg';
 
@@ -16,10 +15,6 @@ import {
     ContactInfo,
     IllustrationWrapper,
 } from './contact.styles';
-
-const bubbleStyles = {
-    top: '-5rem !important',
-};
 
 export const Contact = ({ windowSize }) => {
     return (

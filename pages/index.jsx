@@ -5,7 +5,7 @@ import { Hero } from '../components/sections/hero/hero.component';
 import { Offer } from '../components/sections/offer/offer.component';
 import { About } from '../components/sections/about/about.component';
 import { Contact } from '../components/sections/contact/contact.component';
-import { Footer } from '../components/footer/footer.component';
+import { Footer } from '../components/sections/footer/footer.component';
 import { useWindowSize } from '../hooks/useWindowSize';
 
 export default function Home() {

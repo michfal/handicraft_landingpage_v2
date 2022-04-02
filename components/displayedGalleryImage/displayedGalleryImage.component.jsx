@@ -3,9 +3,10 @@ import { GalleryContext } from '../../context/galleryContext';
 import Image from 'next/image';
 import {
     DisplayedImage,
-    ImageContainer,
-    ArrowContainer,
-    CloseIconContainer,
+    ImagesWrapper,
+    ArrowWrapper,
+    CloseIconWrapper,
+    MainImageWrapper,
 } from './displayedGalleryImage.styles';
 import closeIcon from '../../public/images/close_icon.svg';
 import leftArrow from '../../public/images/left_arrow_icon.svg';
@@ -19,7 +20,6 @@ export const DisplayedGalleryImage = ({ imagesData, index }) => {
         if (index < imagesArrayLength - 1) {
             index++;
         }
-
         setActiveImageIndex(index);
     };
 
@@ -27,14 +27,13 @@ export const DisplayedGalleryImage = ({ imagesData, index }) => {
         if (index >= 1) {
             index--;
         }
-
         setActiveImageIndex(index);
     };
 
     return (
         <DisplayedImage>
-            <ImageContainer>
-                <CloseIconContainer>
+            <ImagesWrapper>
+                <CloseIconWrapper>
                     <Image
                         width="40"
                         height="40"
@@ -42,16 +41,18 @@ export const DisplayedGalleryImage = ({ imagesData, index }) => {
                         alt="close"
                         onClick={setImageOpen}
                     />
-                </CloseIconContainer>
-
-                <Image
-                    width={imagesData[index].width}
-                    height={imagesData[index].height}
-                    src={imagesData[index].image}
-                    alt="gallery image"
-                    priority="true"
-                />
-                <ArrowContainer>
+                </CloseIconWrapper>
+                <MainImageWrapper>
+                    <Image
+                        width={imagesData[index].width}
+                        height={imagesData[index].height}
+                        src={imagesData[index].image}
+                        alt="gallery image"
+                        // priority="true"
+                        layout="responsive"
+                    />
+                </MainImageWrapper>
+                <ArrowWrapper>
                     <Image
                         width="40"
                         height="40"
@@ -66,8 +67,8 @@ export const DisplayedGalleryImage = ({ imagesData, index }) => {
                         alt="arrow right"
                         onClick={scrollRight}
                     />
-                </ArrowContainer>
-            </ImageContainer>
+                </ArrowWrapper>
+            </ImagesWrapper>
         </DisplayedImage>
     );
 };

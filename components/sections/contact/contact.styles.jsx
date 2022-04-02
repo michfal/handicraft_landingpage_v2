@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const ContactWrapper = styled.div`
+    /* border: 1px solid blue; */
     overflow: hidden;
-    min-height: 40vh;
+    min-height: 45vh;
     position: relative;
     padding-top: 10vh;
     display: grid;
@@ -10,13 +11,16 @@ export const ContactWrapper = styled.div`
     grid-template-rows: 1fr 6fr;
     & > span {
         z-index: -1;
-        /* top: -5rem; */
     }
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.tablet}) {
-        /* border: 1px solid blue; */
         padding-top: 5vh;
         min-height: 30vh;
+    }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        padding-top: 0;
+        min-height: 50vh;
     }
 `;
 
@@ -27,7 +31,11 @@ export const ContactInfoWrapper = styled.div`
     @media only screen and (min-width: ${(props) =>
             props.theme.breakpoints.tablet}) {
         grid-column-end: 2;
-        margin: 2rem 1rem auto auto;
+        margin: 19% 5% auto auto;
+    }
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        margin: 12% 5% auto auto;
     }
 `;
 
@@ -54,8 +62,12 @@ export const ContactInfo = styled.div`
 `;
 
 export const IllustrationWrapper = styled.div`
-    height: 20rem;
+    height: 17rem;
     position: relative;
     width: 60%;
-    margin: 0 auto auto 4rem;
+    margin: 20% auto auto 15%;
+    @media only screen and (min-width: ${(props) =>
+            props.theme.breakpoints.laptop}) {
+        margin: 12% auto auto 5%;
+    }
 `;

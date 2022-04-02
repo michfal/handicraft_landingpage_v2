@@ -3,11 +3,10 @@ import { useToggle } from '../hooks/useToggle';
 import { ThemeProvider } from 'styled-components';
 
 import './_app.css';
-import { GalleryContextWrapper } from '../context/galleryWrapper';
 import { GalleryContext } from '../context/galleryContext';
 import { GlobalStyle } from '../globals/reset.styles';
 
-import { theme, size } from '../globals/theme';
+import { theme } from '../globals/theme';
 
 function MyApp({ Component, pageProps }) {
     const testVal = 'test val';

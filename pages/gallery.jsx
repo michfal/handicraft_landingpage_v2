@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Navbar } from '../components/navbar/navbar.component';
-import { Footer } from '../components/footer/footer.component';
+import { Footer } from '../components/sections/footer/footer.component';
 import { GalleryContent } from '../components/galleryContent/galleryContent.component';
 import { Contact } from '../components/sections/contact/contact.component';
 import { useWindowSize } from '../hooks/useWindowSize';
